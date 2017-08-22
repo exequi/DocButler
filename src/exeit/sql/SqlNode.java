@@ -3,21 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package exeit;
+package exeit.sql;
 
 /**
  *
  * @author GDZC0003
  */
-public class SqlFile {
+public class SqlNode {
     
-    private String fileName;
+    public SqlFile sqlFile;
     
-    public String getFileName(){
-        return fileName;
+    public String getText(){
+        return this.sqlFile.getFileName();
     }
-    
-    private String fullName;
     
     
 }
