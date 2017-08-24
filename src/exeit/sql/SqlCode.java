@@ -23,6 +23,14 @@ public class SqlCode {
     
     private SqlType sqlType;
     
+    public String getTableName() {
+        return this.tableName;
+    }
+    
+    public SqlType getSqlType() {
+        return this.sqlType;
+    }
+        
     public SqlCode(){
         
     }
@@ -80,8 +88,11 @@ public class SqlCode {
             }
         }
     }
-    
-    
+
+    public boolean isPass(){
+        return !(this.tableName==null || this.sqlType==SqlType.unknow);
+    }
+
     
 }
 
